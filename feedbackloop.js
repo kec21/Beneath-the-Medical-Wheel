@@ -1,6 +1,6 @@
 function feedbackloop() {
 
-this.setup = function() {
+this.enter = function() {
     background(255);
     let button = createButton('GO TO THE DOCTOR');
     button.id("doctorButton");
