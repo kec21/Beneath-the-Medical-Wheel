@@ -1,21 +1,23 @@
+function bodymap() {
+
 let img;
 const poly = [];
 const poly2 = [];
 let phrases = ["YOU ARE PERFECTLY HEALTHY","STOP BEING SO NEGATIVE","I CAN'T SEE ANYTHING WRONG","IF IT HURTS, DON'T DO THAT","PAIN IS ALL IN THE MIND","ARE YOU FEELING STRESSED OR DEPRESSED?","PAIN IS SUBJECTIVE","BEING OVERWEIGHT CAN ADD UP TO 5LBS OF PRESSURE TO YOUR JOINTS","HAVE YOU TRIED EXERCISE?","YOU ARE TOO YOUNG TO BE IN PAIN"];
 
 
-function preload(){
+this.preload = function(){
 img = loadImage('invisiblewound.jpg')
 }
 
 var cnv;
-function centerCanvas() {
+this.centerCanvas = function() {
   var x = (windowWidth - width) / 2;
   var y = (windowHeight - height) / 2;
   cnv.position(x, y);
 }
 
-function setup() {
+this.setup = function() {
   cnv = createCanvas(1000,1000);
   centerCanvas ();
   poly[0] = createVector(137,385);
@@ -62,11 +64,11 @@ function setup() {
   poly2[3] = createVector(376,961);
 }
 
-function windowResized() {
+this.windowResized = function() {
   centerCanvas();
 }
 
-function draw() {
+this.draw = function() {
   background(125);
   image(img, 0, 0, width, height);
   //beginShape();
@@ -77,7 +79,7 @@ function draw() {
   //print('colliding?')
 }
 
-function mouseClicked() {
+this.mouseClicked = function() {
   hit1 = collidePointPoly(mouseX,mouseY,poly);
   hit2 = collidePointPoly(mouseX,mouseY,poly2);
   if (hit1) {
@@ -85,7 +87,8 @@ function mouseClicked() {
     alert(thisphrase)
   }
   if (hit2) {
-    console.log("go to feedbackloop");
+    this.sceneManager.showScene(feedbackloop);
   }
   
+}
 }

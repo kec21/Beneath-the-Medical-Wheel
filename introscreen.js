@@ -1,19 +1,21 @@
+function introscreen() {
+
 let img;
 const poly = [];
 
 
-function preload(){
+this.preload = function(){
 img = loadImage('introscreen.jpg')
 }
 
 var cnv;
-function centerCanvas() {
+this.centerCanvas = function() {
   var x = (windowWidth - width) / 2;
   var y = (windowHeight - height) / 2;
   cnv.position(x, y);
 }
 
-function setup() {
+this.setup = function() {
   cnv = createCanvas(1000,1000);
   centerCanvas ();
   poly[0] = createVector(137,385);
@@ -22,18 +24,19 @@ function setup() {
   poly[3] = createVector(253,285);
 }
 
-function windowResized() {
+this.windowResized = function() {
   centerCanvas();
 }
 
-function draw() {
+this.draw = function() {
   background(125);
   image(img, 0, 0, width, height);
 }
 
-function mouseClicked() {
+this.mouseClicked = function() {
   hit = collidePointPoly(mouseX,mouseY,poly);
   if (hit) {
-    console.log("go to bodymap");
+    mgr.showScene(bodymap);
   }
+}
 }
