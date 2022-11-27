@@ -6,3 +6,156 @@ html, body {
 canvas {
   display: block;
 }
+
+#doctorButton {
+  position: absolute;
+  left: 100px;
+  top: 200px;
+  width: 200px;
+  padding: 20px;
+  background-color:palegoldenrod;
+}
+
+#specialist1Button {
+  position: absolute;
+  left: 400px;
+  top: 200px;
+  width: 200px;
+  padding: 20px;
+  background-color:gold;
+}
+
+#specialist2Button {
+  position: absolute;
+  left: 400px;
+  top: 500px;
+  width: 200px;
+  padding: 20px;
+  background-color:gold;
+}
+
+#specialist3Button {
+  position: absolute;
+  left: 100px;
+  top: 500px;
+  width: 200px;
+  padding: 20px;
+  background-color:gold;
+}
+
+#labworkButton {
+  position: absolute;
+  left: 300px;
+  top: 400px;
+  width: 200px;
+  padding: 20px;
+  background-color:orange;
+}
+
+#labwork2Button {
+  position: absolute;
+  left: 50px;
+  top: 90px;
+  width: 200px;
+  padding: 20px;
+  background-color:orange;
+}
+
+#labwork3Button {
+  position: absolute;
+  left: 120px;
+  top: 240px;
+  width: 200px;
+  padding: 20px;
+  background-color:orange;
+}
+
+#scan1Button {
+  position: absolute;
+  left: 170px;
+  top: 445px;
+  width: 200px;
+  padding: 20px;
+  background-color:rgb(238, 115, 21);
+}
+
+#scan2Button {
+  position: absolute;
+  left: 500px;
+  top: 80px;
+  width: 200px;
+  padding: 20px;
+  background-color:rgb(238, 115, 21);
+}
+
+#scan3Button {
+  position: absolute;
+  left: 500px;
+  top: 490px;
+  width: 200px;
+  padding: 20px;
+  background-color:rgb(238, 115, 21);
+}
+
+#normal1 {
+  position: absolute;
+  left: 200px;
+  top: 300px;
+  width: 200px;
+  padding: 20px;
+  background-color:rgb(222, 52, 22);
+}
+
+#normal2 {
+  position: absolute;
+  left: 200px;
+  top: 150px;
+  width: 200px;
+  padding: 20px;
+  background-color:rgb(222, 52, 22);
+}
+
+#normal3 {
+  position: absolute;
+  left: 52px;
+  top: 580px;
+  width: 200px;
+  padding: 20px;
+  background-color:rgb(222, 52, 22);
+}
+
+#endlesscycle1 {
+  position: absolute;
+  left: 52px;
+  top: 100px;
+  width: 400px;
+  padding: 100px;
+  background-color:rgb(130, 29, 11);
+}
+
+#endlesscycle2 {
+  position: absolute;
+  left: 300px;
+  top: 350px;
+  width: 400px;
+  padding: 100px;
+  background-color:rgb(130, 29, 11);
+}
+
+#endlesscycle3 {
+  position: absolute;
+  left: 100px;
+  top: 600px;
+  width: 400px;
+  padding: 100px;
+  background-color:rgb(130, 29, 11);
+}
+
+#exitbutton {
+  position: absolute;
+  left:10px;
+  top:10px;
+  width:200px;
+  padding:20px;
+  background-color:cornflowerblue;
+}
