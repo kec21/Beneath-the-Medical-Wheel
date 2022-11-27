@@ -34,7 +34,6 @@ function draw() {
 function mouseClicked() {
   hit = collidePointPoly(mouseX,mouseY,poly);
   if (hit) {
-    let thisphrase = phrases[round(random(7))]
-    alert(thisphrase)
+    console.log("go to bodymap");
   }
 }

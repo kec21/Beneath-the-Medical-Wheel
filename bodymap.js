@@ -85,7 +85,7 @@ function mouseClicked() {
     alert(thisphrase)
   }
   if (hit2) {
-    
+    console.log("go to feedbackloop");
   }
   
 }
