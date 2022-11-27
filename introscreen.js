@@ -16,7 +16,7 @@ this.centerCanvas = function() {
 }
 
 this.setup = function() {
-  cnv = createCanvas(1000,1000);
+
   centerCanvas ();
   poly[0] = createVector(137,385);
   poly[1] = createVector(180,362);
