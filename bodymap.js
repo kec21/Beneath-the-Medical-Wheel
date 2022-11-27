@@ -10,16 +10,8 @@ this.preload = function(){
 img = loadImage('invisiblewound.jpg')
 }
 
-var cnv;
-this.centerCanvas = function() {
-  var x = (windowWidth - width) / 2;
-  var y = (windowHeight - height) / 2;
-  cnv.position(x, y);
-}
 
 this.enter = function() {
-  cnv = createCanvas(1000,1000);
-  centerCanvas ();
   poly[0] = createVector(137,385);
   poly[1] = createVector(180,362);
   poly[2] = createVector(176,286);
@@ -62,10 +54,6 @@ this.enter = function() {
   poly2[1] = createVector(625,881);
   poly2[2] = createVector(625,962);
   poly2[3] = createVector(376,961);
-}
-
-this.windowResized = function() {
-  centerCanvas();
 }
 
 this.draw = function() {
