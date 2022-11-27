@@ -92,7 +92,7 @@ function setup() {
   function endlesscycle3() {
     let button15 = createButton("EXIT");
     button15.id("endlesscycle3");
-    button15.mousePressed(console.log("go to intro"));
+    button15.mousePressed(console.log("go to introscreen"));
   }
   
   
