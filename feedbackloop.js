@@ -14,36 +14,31 @@ this.enter = function() {
   this.doctorClicked = function() {
     let button1 = createButton("YOUR DOCTOR HAS REFERRED YOU TO A SPECIALIST");
     button1.id("specialist1Button");
-    button.position(random(width),random(height));
     button1.mousePressed(this.labwork);
     let button2 = createButton("YOUR DOCTOR HAS REFERRED YOU TO A SPECIALIST");
     button2.id("specialist2Button");
-    button2.position(random(width),random(height));
     button2.mousePressed(this.labwork2);
     let button3 = createButton("YOUR DOCTOR HAS REFERRED YOU TO A SPECIALIST");
     button3.id("specialist3Button");
-    button3.position(random(width),random(height));
     button3.mousePressed(this.labwork3);
   }
   
   this.labwork = function() {
+    console.log("labwork");
     let button4 = createButton("YOUR SPECIALIST HAS ORDERED LABWORK");
     button4.id("labworkButton");
-    button4.position(random(width),random(height));
     button4.mousePressed(this.scan1);
   }
   
   this.labwork2 = function() {
     let button5 = createButton("YOUR SPECIALIST HAS ORDERED LABWORK");
     button5.id("labwork2Button");
-    button5.position(random(width),random(height));
     button5.mousePressed(this.scan2);
   }
   
   this.labwork3 = function() {
     let button6 = createButton("YOUR SPECIALIST HAS ORDERED LABWORK");
     button6.id("labwork3Button");
-    button6.position(random(width),random(height));
     button6.mousePressed(this.scan3);
   }
   
