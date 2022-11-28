@@ -4,7 +4,7 @@ let img;
 const poly = [];
 
 
-this.preload = function(){
+this.setup = function(){
 img = loadImage('introscreen.jpg')
 }
 
@@ -14,11 +14,12 @@ this.enter = function() {
   poly[1] = createVector(180,362);
   poly[2] = createVector(176,286);
   poly[3] = createVector(253,285);
+  console.log("introscreen")
 }
 
 this.draw = function() {
-  background(125);
-  image(img, 0, 0, width, height);
+  background(255);
+  image(img, 0, 0);
 }
 
 this.mouseClicked = function() {
