@@ -8,9 +8,6 @@ canvas {
 }
 
 #doctorButton {
-  position: absolute;
-  left: 100px;
-  top: 200px;
   width: 200px;
   padding: 20px;
   background-color:palegoldenrod;
