@@ -6,17 +6,17 @@ function labwork() {
 }
 
 function labwork2() {
-  console.log("labwork");
-  let button4 = createButton("YOUR SPECIALIST HAS ORDERED LABWORK");
-  button4.id("labworkButton");
-  button4.mousePressed(scan1);
+  console.log("labwork2");
+  let button5 = createButton("YOUR SPECIALIST HAS ORDERED LABWORK");
+  button5.id("labworkButton");
+  button5.mousePressed(scan2);
 }
 
 function labwork3() {
-  console.log("labwork");
-  let button4 = createButton("YOUR SPECIALIST HAS ORDERED LABWORK");
-  button4.id("labworkButton");
-  button4.mousePressed(scan1);
+  console.log("labwork3");
+  let button6 = createButton("YOUR SPECIALIST HAS ORDERED LABWORK");
+  button6.id("labworkButton");
+  button6.mousePressed(scan3);
 }
 
 function scan1() {
