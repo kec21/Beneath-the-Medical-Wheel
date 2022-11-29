@@ -103,12 +103,15 @@ this.enter = function() {
   this.doctorClicked = function() {
     let button1 = createButton("YOUR DOCTOR HAS REFERRED YOU TO A SPECIALIST");
     button1.id("specialist1Button");
+    button1.position(random(width),random(height));
     button1.mousePressed(labwork);
     let button2 = createButton("YOUR DOCTOR HAS REFERRED YOU TO A SPECIALIST");
     button2.id("specialist2Button");
+    button2.position(random(width),random(height));
     button2.mousePressed(labwork2);
     let button3 = createButton("YOUR DOCTOR HAS REFERRED YOU TO A SPECIALIST");
     button3.id("specialist3Button");
+    button3.position(random(width),random(height));
     button3.mousePressed(labwork3);
   }
   
