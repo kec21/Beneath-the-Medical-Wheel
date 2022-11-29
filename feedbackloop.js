@@ -6,15 +6,17 @@ function labwork() {
 }
 
 function labwork2() {
-  let button5 = createButton("YOUR SPECIALIST HAS ORDERED LABWORK");
-  button5.id("labwork2Button");
-  button5.mousePressed(scan2);
+  console.log("labwork");
+  let button4 = createButton("YOUR SPECIALIST HAS ORDERED LABWORK");
+  button4.id("labworkButton");
+  button4.mousePressed(scan1);
 }
 
 function labwork3() {
-  let button6 = createButton("YOUR SPECIALIST HAS ORDERED LABWORK");
-  button6.id("labwork3Button");
-  button6.mousePressed(scan3);
+  console.log("labwork");
+  let button4 = createButton("YOUR SPECIALIST HAS ORDERED LABWORK");
+  button4.id("labworkButton");
+  button4.mousePressed(scan1);
 }
 
 function scan1() {
@@ -98,13 +100,13 @@ this.enter = function() {
   this.doctorClicked = function() {
     let button1 = createButton("YOUR DOCTOR HAS REFERRED YOU TO A SPECIALIST");
     button1.id("specialist1Button");
-    button1.mousePressed(this.labwork);
+    button1.mousePressed(labwork);
     let button2 = createButton("YOUR DOCTOR HAS REFERRED YOU TO A SPECIALIST");
     button2.id("specialist2Button");
-    button2.mousePressed(this.labwork2);
+    button2.mousePressed(labwork2);
     let button3 = createButton("YOUR DOCTOR HAS REFERRED YOU TO A SPECIALIST");
     button3.id("specialist3Button");
-    button3.mousePressed(this.labwork3);
+    button3.mousePressed(labwork3);
   }
   
   
